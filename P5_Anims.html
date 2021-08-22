@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Animations in P5.js</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="CV.html">CV</a></li>
+							<li><a href="Publications.html">Publications</a></li>
+							<li><a href="sketch.html">Sketches</a></li>
+							<li class="active"><a href="P5_Anims.html">P5 Animations</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/ghostktjMactavish" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<p>I got into P5 after watching <a href="https://www.youtube.com/watch?v=HyK_Q5rrcr4&t=472s&ab_channel=TheCodingTrain">the Coding Train</a>
+							 on youtube. Most of them have been made after watching Dan Schiffman's videos.
+							 <small><strong>**Don't run all the sketches at once as they'll start to lag and the site might crash**</strong></small></p>
+						<h3>Flock Simulation using Boids</h3>
+						<div id="row">
+						<button type="button"  onclick="runScript('p5sketches/FlockSim.js','FlockSim','on')">Start Sketch</button>
+    					<button type="button"  onclick="runScript('','FlockSim','off')">End Sketch</button>
+						</div>
+						<script>
+							function runScript(filename,id,status)
+							{
+										var head = document.getElementById(id);
+										if(status == 'on'){
+											script = document.createElement('script');
+											script.src = filename;
+											script.type = "text/javascript";
+											head.appendChild(script)
+										}
+										else if(status == 'off'){
+											var tags = head.children;
+											while(tags.length > 0){
+												head.removeChild(tags[0]);
+											}
+										}
+							}
+						</script>
+						<div id="FlockSim">
+							<!-- <script src="p5sketches/FlockSim.js" type="text/javascript"></script> -->
+						</div>
+						
+						<h3>Fourier Visualisation using Epicycles</h3>
+						<div id="row">
+							<button type="button"  onclick="runScript('p5sketches/FourierViz.js','FourierViz','on')">Start Sketch</button>
+							<button type="button"  onclick="runScript('','FourierViz','off')">End Sketch</button>
+							</div>
+						<div id="FourierViz">
+							<!-- <script src="p5sketches/FourierViz.js" type="text/javascript"></script> -->
+						</div>
+
+						<h3>Maze Generation using Backtracking</h3>
+						<div id="row">
+							<button type="button"  onclick="runScript('p5sketches/Maze.js','MazeGen','on')">Start Sketch</button>
+							<button type="button"  onclick="runScript('','MazeGen','off')">End Sketch</button>
+							</div>
+						<div id="MazeGen">
+							<!-- <script src="p5sketches/FourierViz.js" type="text/javascript"></script> -->
+						</div>
+						<h3>ChaosFractal </h3>
+						<div id="row">
+							<button type="button"  onclick="runScript('p5sketches/chaos.js','ChaosFractal','on')">Start Sketch</button>
+							<button type="button"  onclick="runScript('','ChaosFractal','off')">End Sketch</button>
+							</div>
+						<div id="ChaosFractal">
+							<!-- <script src="p5sketches/FourierViz.js" type="text/javascript"></script> -->
+						</div>
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>

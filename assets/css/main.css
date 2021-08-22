@@ -4691,3 +4691,12 @@ input, select, textarea {
 		}
 
 	}
+	
+	#FlockSim button
+	{
+		width: 150px;
+		height: 60px;
+		font-size: 14px;
+		padding: 0px 0px 0px 0px;
+		word-wrap: break-word;
+	}
