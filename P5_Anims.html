@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Animations in P5.js</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -67,6 +67,11 @@
 											}
 										}
 							}
+							function reset(filename,id)
+							{
+								runScript(filename,id,'off');
+								runScript(filename,id,'on');
+							}
 						</script>
 						<div id="FlockSim">
 							<!-- <script src="p5sketches/FlockSim.js" type="text/javascript"></script> -->
@@ -95,6 +100,15 @@
 							<button type="button"  onclick="runScript('','ChaosFractal','off')">End Sketch</button>
 							</div>
 						<div id="ChaosFractal">
+							<!-- <script src="p5sketches/FourierViz.js" type="text/javascript"></script> -->
+						</div>
+						<h3>Eades Spring Embedding for Visualising Graphs</h3>
+						<div id="row">
+							<button type="button"  onclick="runScript('p5sketches/eades.js','Eades','on')">Start Sketch</button>
+							<button type="button"  onclick="runScript('','Eades','off')">End Sketch</button>
+							<button type="button"  onclick="reset('p5sketches/eades.js','Eades',)">Reset Sketch</button>
+							</div>
+						<div id="Eades">
 							<!-- <script src="p5sketches/FourierViz.js" type="text/javascript"></script> -->
 						</div>
 						

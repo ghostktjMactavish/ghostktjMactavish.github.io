@@ -135,35 +135,35 @@ var flocksim = function(p)
 
 
     p.buttonA = p.createButton("Align");
-    p.buttonA.position(p.w+90,200+260)
+    p.buttonA.position(p.w+90,470+260)
     p.buttonC = p.createButton("Cohesion");
-    p.buttonC.position(p.w+90,200+330)
+    p.buttonC.position(p.w+90,470+330)
     p.buttonS = p.createButton("Separation");
-    p.buttonS.position(p.w+90,200+400)
+    p.buttonS.position(p.w+90,470+400)
     p.buttonP = p.createButton("Perception");
-    p.buttonP.position(p.w+90,200+470)
+    p.buttonP.position(p.w+90,470+470)
     p.buttonSpeed = p.createButton("MaxSpeed");
-    p.buttonSpeed.position(p.w+90,200+540)
+    p.buttonSpeed.position(p.w+90,470+540)
     p.buttonForce = p.createButton("MaxForce");
-    p.buttonForce.position(p.w+90,200+610)
+    p.buttonForce.position(p.w+90,470+610)
     
     p.alignSlider = p.createSlider(0,5,1,0.1);
-    p.alignSlider.position(p.w+260,200+275);
+    p.alignSlider.position(p.w+260,470+275);
     p.alignSlider.style('border','2px solid')
     p.cohesionSlider = p.createSlider(0,5,1,0.1);
-    p.cohesionSlider.position(p.w+260,200+345);
+    p.cohesionSlider.position(p.w+260,470+345);
     p.cohesionSlider.style('border','2px solid');
     p.separationSlider = p.createSlider(0,5,1,0.1);
-    p.separationSlider.position(p.w+260,200+415);
+    p.separationSlider.position(p.w+260,470+415);
     p.separationSlider.style('border','2px solid');
     p.perceptionSlider = p.createSlider(10,100,60);
-    p.perceptionSlider.position(p.w+260,200+485);
+    p.perceptionSlider.position(p.w+260,470+485);
     p.perceptionSlider.style('border','2px solid');
     p.maxSpeedSlider = p.createSlider(0.1,5,1,0.1);
-    p.maxSpeedSlider.position(p.w+260,200+555);
+    p.maxSpeedSlider.position(p.w+260,470+555);
     p.maxSpeedSlider.style('border','2px solid');
     p.maxForceSlider = p.createSlider(0.1,1,0.2,0.1);
-    p.maxForceSlider.position(p.w+260,200+625);
+    p.maxForceSlider.position(p.w+260,470+625);
     p.maxForceSlider.style('border','2px solid');
     
     for(i=0;i<100;i++)
